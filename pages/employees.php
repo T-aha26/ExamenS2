@@ -39,7 +39,7 @@ if (!isset($connexion)) {
                 FROM employees e
                 JOIN dept_emp d ON e.emp_no = d.emp_no
                 WHERE d.dept_no = ? AND d.to_date = '9999-01-01'
-            ";:
+            ";
 
             $stmt = $connexion->prepare($requete);
 
