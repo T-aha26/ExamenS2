@@ -47,6 +47,7 @@ if (!isset($connexion)) {
                 <th>Nom du Département</th>
                 <th>Manager</th>
                 <th>Voir les Employés</th>
+                <th>Nombre Employé</th>
             </tr>
         </thead>
         <tbody>
@@ -71,7 +72,8 @@ if (!isset($connexion)) {
                 echo "<td>$nom</td>";
                 
                 echo "<td>$manager</td>";
-               echo "<td><a href='pages/employees.php?code=$code' class='btn btn-primary btn-sm'>Voir</a></td>";
+                echo "<td><a href='pages/employees.php?code=$code' class='btn btn-primary btn-sm'>Voir</a></td>";
+                echo "<td><a href='pages/nbemployees.php?code=$code' class='btn btn-primary btn-sm'>Voir</a></td>";
                 echo "</tr>";
             }
         } else {
